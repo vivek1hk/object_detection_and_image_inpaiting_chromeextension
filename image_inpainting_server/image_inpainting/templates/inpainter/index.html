@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+     
+        <meta charset="utf-8">
+        <title>Howdy!</title>
+    </head>
+    <body>
+        <h1>Howdy! I am Learning Django!</h1>
+        <div id="imagediv"> </div>
+         
+    </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+console.log("Got here");
+  $.ajax({
+  url: "http://localhost:8000/index/",
+  data: {
+    img: 97201
+  },
+  success: function( result ) {
+    // $( "#weather-temp" ).html( "<strong>" + result + "</strong> degrees" );
+     $('#imagediv').html('<img alt="Embedded Image" src="data:image/gif;base64,' + result + '" />');
+  }
+    });
+    </script>
+</html>
