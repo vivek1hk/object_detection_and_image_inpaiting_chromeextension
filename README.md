@@ -16,3 +16,9 @@ Step 5 : Hover over any image for more than 4 seconds to start inpainting proces
 
 Link to video demonstrating the application 
 https://www.youtube.com/watch?v=D7DnDXgfdMw
+
+Link to presentation
+https://drive.google.com/open?id=0B1YHoTEewn8oZC1ua3lZYnNpcTQ
+
+Link to ACM Paper
+https://drive.google.com/open?id=0B1YHoTEewn8oRE9DSE5RMkVJdnM
