@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trumputin",
+  "description": "Replaces images of Donald Trump with kittens, because seriously, f*** that guy.",
+  "version": "1.2.1",
+  "options_page": "makaoptions.html",
+
+  "permissions": [
+    "http://www.teaandkittens.co.uk/",
+    "storage",
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "http://localhost:8000/index/"
+  ],
+  
+  "icons": { "48": "maka48.png",
+          "128": "maka128.png" },
+  "browser_action": {
+          "default_icon": { 
+	           "48": "maka48.png",
+			   "128": "maka128.png" 
+          },
+          "default_title": "#MAKA",      
+          "default_popup": "makaoptions.html"       
+        },        
+  
+  "background": {
+    "scripts": ["jquery-3.2.1.min.js","setmakamenu.js", "background.js"]
+  },
+          
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-3.2.1.min.js","maka.js","jquery-ui.js"],
+      "css": ["css_file.css","jquery-ui.css","jquery-ui.theme.css","jquery-ui.structure.css"]
+      
+    }
+  ],
+  "web_accessible_resources": [
+    "kittens/*.jpg"
+  ]
+}

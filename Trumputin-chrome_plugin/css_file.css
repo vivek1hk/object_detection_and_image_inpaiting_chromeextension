@@ -1,0 +1,36 @@
+.div-mid {
+  border:2px solid grey;
+  -webkit-border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  -moz-border-radius-topleft:6px;
+  -moz-border-radius-topright:6px;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;	 
+  position: fixed;
+  height:128px;
+  width:128px;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index : 100;
+  background: white;
+  transition:width 1s ease-in-out;
+
+	} 
+	
+
+.div-mid h2 {
+  padding:4px;
+  color:#fff;
+  margin:0;
+  background-color:#0094ff;
+  font-size:12pt; /* or whatever */
+}
+
+.loading-class 
+{
+  height:128px;
+  width:128px;
+}
+
